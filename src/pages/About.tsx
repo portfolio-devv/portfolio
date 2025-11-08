@@ -1,5 +1,6 @@
 import React from 'react';
-import profileImg from '../assets/image.jpg'; // ✅ import your image
+import profileImg from '../assets/image.jpg'; 
+import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
   const skills = [
@@ -205,12 +206,12 @@ const About: React.FC = () => {
     <p className="text-xl mb-8 max-w-2xl mx-auto">
       I'm always interested in new opportunities and challenging projects.
     </p>
-    <a
-      href="/contact"
+   <Link
+      to="/contact"
       className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-200 inline-block"
     >
       Get In Touch
-    </a>
+    </Link>
   </div>
 </section>
       </div>
